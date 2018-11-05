@@ -1,12 +1,12 @@
 describe User do
   describe '.create' do
     it 'creates a new user' do
-      user = User.create(
+      expect{ User.create(
         :name => 'Bill',
         :email => 'billsemail@billisgreat.com',
         :password => 'password'
-      )
-      expect(user.name).to eq 'Bill'
+      ) }.to change {User.count}.by(1)
+
     end
   end
 

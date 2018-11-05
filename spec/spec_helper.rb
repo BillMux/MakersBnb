@@ -19,6 +19,12 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 
 RSpec.configure do |config|
+  config.include Rack::Test::Methods
+  DataMapper::setup(:default, "postgres://alfie@localhost/MakersBnBDatabase")
+  DataMapper.finalize
+end
+
+RSpec.configure do |config|
   config.include Capybara::DSL
 
   config.after(:suite) do
