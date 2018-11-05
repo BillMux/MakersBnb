@@ -1,4 +1,8 @@
 require 'sinatra/base'
+require 'dm-postgres-adapter'
+require './models/user'
+
+DataMapper.setup(:default, 'postgres://alfie@localhost/MakersBnBDatabase')
 
 class Makersbnb < Sinatra::Base
 
