@@ -5,6 +5,10 @@ As a user
 So I can be a host or a guest
 I would like to be able to sign up
 
+As a user
+So I can utilize the site
+I would like to log in
+
 As a host
 So that I can rent my property
 I would like to be able to list my place
