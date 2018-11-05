@@ -1,7 +1,6 @@
 require 'sinatra/base'
-require 'data_mapper'
 
-class MakersBnB < Sinatra::Base
+class Makersbnb < Sinatra::Base
 
   get '/' do
     erb :index
