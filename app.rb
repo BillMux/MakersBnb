@@ -1,4 +1,4 @@
-require 'sinatra'
+require 'sinatra/base'
 require 'data_mapper'
 
 class MakersBnB < Sinatra::Base
