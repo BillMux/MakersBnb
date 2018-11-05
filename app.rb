@@ -1,6 +1,3 @@
-require 'sinatra/base'
-require './models/users.rb'
-
 class Makersbnb < Sinatra::Base
 
   get '/' do
@@ -13,7 +10,7 @@ class Makersbnb < Sinatra::Base
       :email => params[:email],
       :password => params[:password]
     )
-==    erb :signup
+    erb :signup
   end
 
   post '/registered' do
