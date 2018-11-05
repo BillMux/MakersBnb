@@ -20,7 +20,7 @@ SimpleCov.start
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-  DataMapper::setup(:default, "postgres://alfie@localhost/MakersBnBDatabase")
+  DataMapper::setup(:default, "postgres://san-di@localhost/MakersBnBDatabase")
   DataMapper.finalize
 end
 
