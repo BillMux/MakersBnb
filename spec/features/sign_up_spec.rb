@@ -10,4 +10,15 @@ feature 'signing up' do
     click_button 'Submit'
     expect(page).to have_content 'Welcome, Jaguar!'
   end
+  scenario 'user can sign up as a guest' do
+    visit '/'
+    click_button 'Create Account'
+    fill_in('email', with: 'an@email.com')
+    fill_in('name', with: 'Jaguar Legend')
+    fill_in('password', with: 'password')
+    fill_in('confirm_password', with: 'password')
+    check 'guest'
+    click_button 'Submit'
+    expect(page).to have_content 'Welcome, Jaguar!'
+  end
 end
