@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './models/users.rb'
 
 class Makersbnb < Sinatra::Base
 
@@ -7,6 +8,11 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/signup' do
+    @user = User.Create(
+      :name => params[:name],
+      :email => params[:email],
+      :password => params[:password]
+    )
     erb :signup
   end
 

@@ -5,7 +5,6 @@ feature 'signing up' do
     fill_in('email', with: 'an@email.com')
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')
-    check 'host'
     click_button 'submit'
     expect(page).to have_content 'Welcome, Jaguar!'
   end
@@ -15,7 +14,6 @@ feature 'signing up' do
     fill_in('email', with: 'an@email.com')
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')
-    check 'guest'
     click_button 'submit'
     expect(page).to have_content 'Welcome, Jaguar!'
   end
