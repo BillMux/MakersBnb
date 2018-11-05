@@ -1,5 +1,9 @@
+# MakersBnB
+
 This is an AirBnB clone made by William, Muge, Ryan, Alfie
 
+
+## User Stories
 `````
 As a user
 So I can be a host or a guest
@@ -37,3 +41,21 @@ As a guest
 So that I do not select an already booked property
 I would like the site to not allow me to book
 `````
+
+## Tech
+
+- Ruby backend
+  - DataMapper
+  - Sinatra
+- JS frontend
+  - JQuery
+- Testing
+  - RSpec
+  - Capybara
+  - SimpleCov
+
+## Devs
+- Bill Muxworthy - https://github.com/BillMux
+- Ryan Clark - https://github.com/RyanWolfen7
+- Alfie Freeman - https://github.com/runticle
+- Muge Haslici - https://github.com/MugeHasilci

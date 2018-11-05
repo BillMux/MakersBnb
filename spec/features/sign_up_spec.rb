@@ -6,6 +6,6 @@ feature 'signing up' do
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')
     click_button 'submit'
-    expect(page).to have_content 'Welcome, Jaguar!'
+    expect(page).to have_content 'Welcome, Jaguar'
   end
 end
