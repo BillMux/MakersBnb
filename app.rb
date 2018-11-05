@@ -8,7 +8,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/signup' do
-    @user = User.Create(
+    @user = User.create(
       :name => params[:name],
       :email => params[:email],
       :password => params[:password]
