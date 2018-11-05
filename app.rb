@@ -13,7 +13,7 @@ class Makersbnb < Sinatra::Base
       :email => params[:email],
       :password => params[:password]
     )
-    erb :signup
+==    erb :signup
   end
 
   post '/registered' do
