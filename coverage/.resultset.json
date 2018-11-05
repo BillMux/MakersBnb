@@ -9,41 +9,31 @@
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/san-di/makersAcademy/MakersBnb/spec/features/sign_up_spec.rb": [
-=======
-      "/Users/alfie/Desktop/code/week6/makersbnb/MakersBnb/spec/features/sign_up_spec.rb": [
->>>>>>> 2e8c26af0c215794de5b778cc6a485975cee681c
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1541428199
-=======
-    "timestamp": 1541427755
->>>>>>> 2e8c26af0c215794de5b778cc6a485975cee681c
+    "timestamp": 1541428811
   }
 }
