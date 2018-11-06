@@ -6,5 +6,8 @@ class User
   property :password, String, length: 6..25
   property :created_at, DateTime
 
-  DataMapper.finalize
+  def self.log_in(email, password)
+    user = User.first(:email => email)
+    return user.password == password
+  end
 end

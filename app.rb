@@ -9,6 +9,8 @@ else
 end
 
 class Makersbnb < Sinatra::Base
+  enable :sessions
+
   get '/' do
     erb :index
   end
@@ -19,6 +21,15 @@ class Makersbnb < Sinatra::Base
 
   get '/login' do
     erb :login
+  end
+
+  post '/login' do
+    if User.log_in(params[:email], params[:password])
+      session[:user_id] = User.first(params[:email])
+      redirect '/'
+    else
+      redirect '/login'
+    end
   end
 
   post '/registered' do
