@@ -1,0 +1,18 @@
+<div>
+  <h1> Available Spaces </h1>
+  <ul>
+  <% @spaces.each do |space| %>
+  <li>
+    <section>
+      <li>
+        <a href="/lists/<%= space.id %>">
+          <%= space.title %>
+        </a>
+        <input type="hidden" id=<%=space.title%>
+        <sub> Location: <%= space.location %> </sub>
+        <sub> No. Guests: <%= space.guests %> </sub>
+      </li>
+      <% end %>
+    </section>
+  </ul>
+</div>

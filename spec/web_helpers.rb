@@ -7,9 +7,9 @@ def signup
   click_button 'submit'
 end
 
-def lists_properties
+def lists_spaces
   click_button 'Home'
-  click_button 'post_listing'
+  click_button 'post_space'
   fill_in('title', with: 'Jaguars House')
   fill_in('description', with: 'A cosy and quiet double room')
   fill_in('location', with: 'Central London')

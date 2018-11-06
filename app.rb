@@ -38,12 +38,12 @@ class Makersbnb < Sinatra::Base
     erb :registered
   end
 
-  get '/new-listing' do
-    erb :newlisting
+  get '/new-space' do
+    erb :newspace
   end
 
   post '/listed' do
-    Listing.create(
+    Space.create(
       title: params[:title],
       location: params[:location],
       description: params[:description],
@@ -54,13 +54,13 @@ class Makersbnb < Sinatra::Base
     erb :listed
   end
 
-  get '/listings' do
-    @properties = Listing.all
-    erb :listings
+  get '/spaces' do
+    @spaces = Space.all
+    erb :spaces
   end
 
-  get '/lists/:id/properties' do
-    @post = Listing.first(params[:id])
+  get '/spaces/:id/' do
+    @space = Space.first(params[:id])
     erb :posting
   end
   run! if app_file == $PROGRAM_NAME

@@ -16,9 +16,9 @@ feature 'index' do
     expect(page).to have_content 'Log in'
   end
 
-  scenario 'user can post listings' do
+  scenario 'user can post spaces' do
     visit '/'
-    click_button :post_listing
-    expect(page).to have_content 'New listing'
+    click_button :post_space
+    expect(page).to have_content 'New space'
   end
 end

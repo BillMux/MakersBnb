@@ -1,5 +1,5 @@
-feature 'listing properties' do
-  scenario 'I can upload a property' do
+feature 'listing space' do
+  scenario 'I can upload a space' do
     # signup
     # click_button 'List Property'
     # fill_in('title', with: 'Jaguars House')

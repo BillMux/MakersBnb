@@ -8,7 +8,7 @@ else
 end
 
 require_relative 'user'
-require_relative 'listing'
+require_relative 'space'
 
 DataMapper.finalize
 DataMapper.auto_upgrade!

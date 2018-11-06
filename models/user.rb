@@ -6,7 +6,7 @@ class User
   property :password, String, length: 6..25
   property :created_at, DateTime
 
-  has n, :listings
+  has n, :spaces
 
   def self.log_in(email, password)
     user = User.first(email: email)
