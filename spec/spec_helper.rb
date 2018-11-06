@@ -3,6 +3,7 @@ require File.join(File.dirname(__FILE__), '..', 'app.rb')
 require 'capybara'
 require 'capybara/rspec'
 require 'dm-postgres-adapter'
+require 'dm-migrations'
 require 'rspec'
 require './models/user'
 require 'simplecov'
@@ -20,6 +21,7 @@ SimpleCov.start
 RSpec.configure do |config|
   config.include Rack::Test::Methods
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+  DataMapper.auto_migrate!
   DataMapper.finalize
 end
 
