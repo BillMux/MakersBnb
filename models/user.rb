@@ -7,4 +7,9 @@ class User
   property :created_at, DateTime
 
   has n, :listings
+
+  def self.log_in(email, password)
+    user = User.first(:email => email)
+    return user.password == password
+  end
 end

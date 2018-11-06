@@ -11,6 +11,8 @@ require 'web_helpers'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
+require File.join(File.dirname(__FILE__), '..', 'app.rb')
+
 ENV['ENV'] = 'test'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([

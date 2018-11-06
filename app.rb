@@ -15,6 +15,20 @@ class Makersbnb < Sinatra::Base
     erb :signup
   end
 
+  get '/login' do
+    erb :login
+  end
+
+  post '/login' do
+    if User.log_in(params[:email], params[:password])
+      @user = User.first(params[:email])
+      session[:user_id] = @user.id
+      redirect '/'
+    else
+      redirect '/login'
+    end
+  end
+
   post '/registered' do
     @user = User.create(
       name: params[:name],

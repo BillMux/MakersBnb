@@ -11,6 +11,31 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/login_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
 <<<<<<< HEAD
@@ -85,9 +110,13 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "timestamp": 1541505085
 =======
     "timestamp": 1541511357
 >>>>>>> iss03
+=======
+    "timestamp": 1541510416
+>>>>>>> iss02
   }
 }
