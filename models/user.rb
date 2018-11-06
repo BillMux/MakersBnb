@@ -5,4 +5,6 @@ class User
   property :email, String
   property :password, String, length: 6..25
   property :created_at, DateTime
+
+  has n, :listings
 end

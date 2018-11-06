@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/index_spec.rb": [
+=======
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/index_spec.rb": [
+>>>>>>> iss03
         1,
         1,
         1,
@@ -9,7 +13,13 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/sign_up_spec.rb": [
+=======
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_places_spec.rb": [
+>>>>>>> iss03
+        1,
+        1,
         1,
         1,
         1,
@@ -22,7 +32,43 @@
         null,
         null
       ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/listing_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+<<<<<<< HEAD
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/user_spec.rb": [
+=======
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/user_spec.rb": [
+>>>>>>> iss03
         1,
         1,
         1,
@@ -38,6 +84,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1541505085
+=======
+    "timestamp": 1541511357
+>>>>>>> iss03
   }
 }

@@ -1,12 +1,14 @@
-require 'data_mapper'
+require 'dm-migrations'
 require 'dm-postgres-adapter'
-
-require_relative 'user'
 
 if ENV['ENV'] == 'test'
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
 else
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
 end
+
+require_relative 'user'
+require_relative 'listing'
+
 DataMapper.finalize
 DataMapper.auto_upgrade!

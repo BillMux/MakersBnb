@@ -4,18 +4,20 @@ require 'dm-postgres-adapter'
 require 'dm-migrations'
 require 'rspec'
 require './models/user'
+require './models/listing'
 require 'simplecov'
 require 'simplecov-console'
+require 'web_helpers'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
 ENV['ENV'] = 'test'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-   SimpleCov::Formatter::Console,
-   # Want a nice code coverage website? Uncomment this next line!
-   # SimpleCov::Formatter::HTMLFormatter
-         ])
+         SimpleCov::Formatter::Console,
+         # Want a nice code coverage website? Uncomment this next line!
+         # SimpleCov::Formatter::HTMLFormatter
+       ])
 SimpleCov.start
 
 Capybara.app = Makersbnb
