@@ -64,5 +64,8 @@ class Makersbnb < Sinatra::Base
     erb :listings
   end
 
+  get '/lists/:id/properties' do
+    
+  end
   run! if app_file == $PROGRAM_NAME
 end

@@ -1,11 +1,17 @@
+<div>
 <h1> Available Properties </h1>
-
+<ul>
 <% @properties.each do |listing| %>
-
+<li>
 <section>
-    <li> <%= listing.title %> </li>
+  <li>
+  <a href="/lists/<%= listing.title %>/properties">
+    <%= listing.title %> </a>
+    <input type="hidden" id=<%=listing.title%>
     <sub> Location: <%= listing.location %> </sub>
     <sub> No. Guests: <%= listing.guests %> </sub>
+  </li>
+  <% end %>
 </section>
-
-<% end %>
+</ul>
+</div>

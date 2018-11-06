@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/index_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/index_spec.rb": [
         1,
         1,
         1,
@@ -27,7 +27,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/list_of_properties_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/list_of_properties_spec.rb": [
         1,
         1,
         1,
@@ -38,7 +38,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_places_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/listing_places_spec.rb": [
         1,
         1,
         null,
@@ -53,7 +53,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/login_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -66,7 +66,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         1,
@@ -79,7 +79,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/listing_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/models/listing_spec.rb": [
         1,
         1,
         1,
@@ -98,7 +98,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/user_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/models/user_spec.rb": [
         1,
         1,
         1,
@@ -114,6 +114,6 @@
         null
       ]
     },
-    "timestamp": 1541520021
+    "timestamp": 1541520412
   }
 }
