@@ -8,11 +8,13 @@ def signup
 end
 
 def lists_properties
-  click_button 'List Property'
+  click_button 'Home'
+  click_button 'post_listing'
   fill_in('title', with: 'Jaguars House')
   fill_in('description', with: 'A cosy and quiet double room')
   fill_in('location', with: 'Central London')
   fill_in('guests', with: 2)
   fill_in('type', with: 'room')
   click_button 'Submit'
+  click_button 'home'
 end
