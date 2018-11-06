@@ -15,4 +15,10 @@ feature 'index' do
     click_button :log_in
     expect(page).to have_content 'Log in'
   end
+
+  scenario 'user can post listings' do
+    visit '/'
+    click_button :post_listing
+    expect(page).to have_content 'New listing'
+  end
 end

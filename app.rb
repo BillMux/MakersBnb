@@ -61,7 +61,7 @@ class Makersbnb < Sinatra::Base
 
   get '/listings' do
     @properties = Listing.all
-    erb :viewproperties
+    erb :listings
   end
 
   run! if app_file == $PROGRAM_NAME
