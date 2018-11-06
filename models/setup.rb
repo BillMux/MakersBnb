@@ -3,6 +3,6 @@ require 'dm-postgres-adapter'
 
 require_relative 'user'
 
-DataMapper.setup(:default, 'postgres://alfie@localhost/MakersBnBDatabase')
+DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
 DataMapper.finalize
 DataMapper.auto_upgrade!
