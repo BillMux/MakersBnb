@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/index_spec.rb": [
-=======
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/index_spec.rb": [
->>>>>>> iss03
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/index_spec.rb": [
         1,
         1,
         1,
@@ -18,6 +14,21 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/listing_places_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -38,26 +49,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/sign_up_spec.rb": [
-=======
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_places_spec.rb": [
->>>>>>> iss03
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         1,
@@ -70,7 +62,7 @@
         null,
         null
       ],
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/listing_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/models/listing_spec.rb": [
         1,
         1,
         1,
@@ -89,11 +81,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/user_spec.rb": [
-=======
-      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/user_spec.rb": [
->>>>>>> iss03
+      "/Users/san-di/makersAcademy/MakersBnb/spec/models/user_spec.rb": [
         1,
         1,
         1,
@@ -109,14 +97,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "timestamp": 1541505085
-=======
-    "timestamp": 1541511357
->>>>>>> iss03
-=======
-    "timestamp": 1541510416
->>>>>>> iss02
+    "timestamp": 1541514586
   }
 }
