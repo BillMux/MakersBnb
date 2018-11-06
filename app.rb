@@ -64,6 +64,8 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/lists/:id/properties' do
+    @post = Listing.first(params[:id])
+    erb :posting
   end
   run! if app_file == $PROGRAM_NAME
 end
