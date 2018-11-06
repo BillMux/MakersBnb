@@ -38,6 +38,7 @@ class Makersbnb < Sinatra::Base
       email: params[:email],
       password: params[:password]
     )
+    session[:user_id] = @user.id
     erb :registered
   end
 
