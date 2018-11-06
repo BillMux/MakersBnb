@@ -17,6 +17,10 @@ class Makersbnb < Sinatra::Base
     erb :signup
   end
 
+  get '/login' do
+    erb :login
+  end
+
   post '/registered' do
     @user = User.create(
       name: params[:name],
