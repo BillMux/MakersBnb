@@ -9,6 +9,21 @@
         null,
         null
       ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_places_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
@@ -38,6 +53,6 @@
         null
       ]
     },
-    "timestamp": 1541499653
+    "timestamp": 1541500655
   }
 }

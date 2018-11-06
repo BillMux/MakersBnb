@@ -8,6 +8,7 @@ require 'rspec'
 require './models/user'
 require 'simplecov'
 require 'simplecov-console'
+require 'web_helpers'
 
 ENV['ENV'] = 'test'
 Capybara.app = Makersbnb

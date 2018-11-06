@@ -26,5 +26,13 @@ class Makersbnb < Sinatra::Base
     erb :registered
   end
 
+  get '/list-new' do
+    erb :newlisting
+  end
+
+  post '/listed' do
+
+  end
+
   run! if app_file == $PROGRAM_NAME
 end
