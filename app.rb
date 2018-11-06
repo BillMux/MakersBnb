@@ -59,7 +59,7 @@ class Makersbnb < Sinatra::Base
     erb :listed
   end
 
-  get '/viewproperties' do
+  get '/listings' do
     @properties = Listing.all
     erb :viewproperties
   end
