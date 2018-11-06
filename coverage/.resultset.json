@@ -14,13 +14,13 @@
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -34,6 +34,23 @@
         1,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/listing_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
         null,
         null
       ],
@@ -53,6 +70,6 @@
         null
       ]
     },
-    "timestamp": 1541500655
+    "timestamp": 1541502954
   }
 }

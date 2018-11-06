@@ -2,6 +2,7 @@ require 'data_mapper'
 require 'dm-postgres-adapter'
 
 require_relative 'user'
+require_relative 'listing'
 
 if ENV['ENV'] == 'test'
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')

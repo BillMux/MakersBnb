@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'dm-postgres-adapter'
 require './models/user'
+require './models/listing'
 
 if ENV['ENV'] == 'test'
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
@@ -31,7 +32,14 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/listed' do
-
+    Listing.create(
+      title: params[:title],
+      location: params[:location],
+      description: params[:description],
+      guests: params[:guests],
+      type: params[:type]
+    )
+    erb :listed
   end
 
   run! if app_file == $PROGRAM_NAME

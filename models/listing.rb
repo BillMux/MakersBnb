@@ -1,11 +1,11 @@
-class List
+class Listing
   include DataMapper::Resource
   property :id, Serial
   property :title, String
   property :location, String
   property :description, String
   property :guests, Integer
-  property :type, String 
+  property :type, String
 
   DataMapper.finalize
 end
