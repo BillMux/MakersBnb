@@ -9,11 +9,12 @@
 
 <body>
 
-Space listed successfully!
+  <%= @space.title %>
+<%= @space.location %>
+<%= @space.description %>
+<%= @space.guests %>
+<%= @space.type %>
+<%= @space.user_id %>
 
-<form action="/" method='get'>
-  <input id='home' type='submit' value="Home">
-</form>
-
-</body>
 </html>
+</body>

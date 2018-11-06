@@ -61,7 +61,7 @@ class Makersbnb < Sinatra::Base
 
   get '/spaces/:id/' do
     @space = Space.first(params[:id])
-    erb :posting
+    erb :space
   end
   run! if app_file == $PROGRAM_NAME
 end
