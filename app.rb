@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'dm-migrations'
 require 'dm-postgres-adapter'
 require './models/user'
 require './models/listing'
@@ -7,6 +8,7 @@ if ENV['ENV'] == 'test'
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
 else
   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+  DataMapper.auto_upgrade!
 end
 
 class Makersbnb < Sinatra::Base
