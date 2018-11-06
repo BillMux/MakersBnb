@@ -1,12 +1,13 @@
 require 'sinatra/base'
+require 'dm-migrations'
 require 'dm-postgres-adapter'
-require './models/user'
-
-if ENV['ENV'] == 'test'
-  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
-else
-  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
-end
+require './models/setup'
+#
+# if ENV['ENV'] == 'test'
+#   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
+# else
+#   DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+# end
 
 class Makersbnb < Sinatra::Base
   enable :sessions
@@ -25,7 +26,8 @@ class Makersbnb < Sinatra::Base
 
   post '/login' do
     if User.log_in(params[:email], params[:password])
-      session[:user_id] = User.first(params[:email])
+      @user = User.first(params[:email])
+      session[:user_id] = @user.id
       redirect '/'
     else
       redirect '/login'
