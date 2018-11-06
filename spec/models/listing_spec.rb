@@ -11,7 +11,6 @@ describe Listing do
           user_id: 2
         )
       end .to change { Listing.count }.by(1)
-
     end
   end
 end

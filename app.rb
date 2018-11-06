@@ -4,7 +4,6 @@ require 'dm-postgres-adapter'
 require './models/setup'
 
 class Makersbnb < Sinatra::Base
-
   enable :sessions
 
   get '/' do
@@ -65,7 +64,6 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/lists/:id/properties' do
-    
   end
   run! if app_file == $PROGRAM_NAME
 end
