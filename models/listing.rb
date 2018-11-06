@@ -7,5 +7,5 @@ class Listing
   property :guests, Integer
   property :type, String
 
-  DataMapper.finalize
+  belongs_to :user
 end

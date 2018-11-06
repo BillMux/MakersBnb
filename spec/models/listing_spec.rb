@@ -4,12 +4,14 @@ describe Listing do
       expect do
         Listing.create(
           title: 'Jaguars House',
-          description: 'A cosy and quiet double room',
+          description: 'A cosy and LOUD double room',
           location: 'Central London',
           guests: 2,
-          type: 'room'
+          type: 'room',
+          user_id: 2
         )
       end .to change { Listing.count }.by(1)
+
     end
   end
 end

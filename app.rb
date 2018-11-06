@@ -1,17 +1,12 @@
 require 'sinatra/base'
 require 'dm-migrations'
 require 'dm-postgres-adapter'
-require './models/user'
-require './models/listing'
-
-if ENV['ENV'] == 'test'
-  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
-else
-  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
-  DataMapper.auto_upgrade!
-end
+require './models/setup'
 
 class Makersbnb < Sinatra::Base
+
+  enable :sessions
+
   get '/' do
     erb :index
   end
@@ -26,10 +21,11 @@ class Makersbnb < Sinatra::Base
       email: params[:email],
       password: params[:password]
     )
+    session[:user_id] = @user.id
     erb :registered
   end
 
-  get '/list-new' do
+  get '/new-listing' do
     erb :newlisting
   end
 
@@ -39,7 +35,8 @@ class Makersbnb < Sinatra::Base
       location: params[:location],
       description: params[:description],
       guests: params[:guests],
-      type: params[:type]
+      type: params[:type],
+      user_id: session[:user_id]
     )
     erb :listed
   end

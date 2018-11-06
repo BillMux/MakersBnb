@@ -6,6 +6,5 @@ class User
   property :password, String, length: 6..25
   property :created_at, DateTime
 
-  # has n, :listings
-  DataMapper.finalize
+  has n, :listings
 end
