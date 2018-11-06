@@ -12,7 +12,6 @@ require 'simplecov-console'
 require 'web_helpers'
 
 ENV['ENV'] = 'test'
-Capybara.app = Makersbnb
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
          SimpleCov::Formatter::Console,
@@ -20,6 +19,8 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
          # SimpleCov::Formatter::HTMLFormatter
        ])
 SimpleCov.start
+
+Capybara.app = Makersbnb
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
