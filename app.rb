@@ -43,7 +43,7 @@ class Makersbnb < Sinatra::Base
     erb :registered
   end
 
-  post '/new-listing' do
+  get '/new-listing' do
     erb :newlisting
   end
 
