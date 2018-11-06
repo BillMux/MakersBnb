@@ -9,6 +9,7 @@ require './models/user'
 require 'simplecov'
 require 'simplecov-console'
 
+ENV['ENV'] = 'test'
 Capybara.app = Makersbnb
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
@@ -20,7 +21,7 @@ SimpleCov.start
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
-  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
   DataMapper.auto_migrate!
   DataMapper.finalize
 end

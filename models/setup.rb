@@ -3,6 +3,10 @@ require 'dm-postgres-adapter'
 
 require_relative 'user'
 
-DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+if ENV['ENV'] == 'test'
+  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
+else
+  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+end
 DataMapper.finalize
 DataMapper.auto_upgrade!

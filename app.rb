@@ -2,7 +2,11 @@ require 'sinatra/base'
 require 'dm-postgres-adapter'
 require './models/user'
 
-DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+if ENV['ENV'] == 'test'
+  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase_test')
+else
+  DataMapper.setup(:default, 'postgres://@localhost/MakersBnBDatabase')
+end
 
 class Makersbnb < Sinatra::Base
   get '/' do
