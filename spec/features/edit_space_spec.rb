@@ -1,11 +1,11 @@
-feature 'available spaces' do
-  scenario 'i can see a list of available spaces' do
+feature 'spaces' do
+  scenario 'can update a space' do
     visit '/'
     click_button 'Create Account'
-    fill_in('email', with: 'an@ehhfkuhmail.com')
-    fill_in('name', with: 'Jaguar3 Legend')
-    fill_in('password', with: 'nnnn')
-    click_button :submit
+    fill_in('email', with: 'an@email.com')
+    fill_in('name', with: 'Jaguar Legend')
+    fill_in('password', with: 'password')
+    click_button :submit # <- cannot find button!!
     click_button :home
     click_button 'New Space'
     fill_in('title', with: 'Jaguars House')
@@ -15,8 +15,10 @@ feature 'available spaces' do
     fill_in('type', with: 'room')
     click_button 'Submit'
     click_button 'Home'
-    click_button 'View Spaces'
-    expect(page).to have_content 'Available Spaces'
-    expect(page).to have_content 'Jaguars House'
+    visit '/profile'
+    click_link 'Edit'
+    fill_in('type', with: 'house')
+    click_button 'Submit'
+    expect(page).to have_content 'house'
   end
 end

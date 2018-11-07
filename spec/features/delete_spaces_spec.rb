@@ -1,12 +1,12 @@
-feature 'available spaces' do
-  scenario 'i can see a list of available spaces' do
+feature 'spaces' do
+  scenario 'can be deleted' do
     visit '/'
     click_button 'Create Account'
-    fill_in('email', with: 'an@ehhfkuhmail.com')
-    fill_in('name', with: 'Jaguar3 Legend')
+    fill_in('email', with: 'an@ehhmail.com')
+    fill_in('name', with: 'Jaguar2 Legend')
     fill_in('password', with: 'nnnn')
     click_button :submit
-    click_button :home
+    click_button 'Home'
     click_button 'New Space'
     fill_in('title', with: 'Jaguars House')
     fill_in('description', with: 'A cosy and quiet double room')
@@ -14,9 +14,8 @@ feature 'available spaces' do
     fill_in('guests', with: 2)
     fill_in('type', with: 'room')
     click_button 'Submit'
-    click_button 'Home'
-    click_button 'View Spaces'
-    expect(page).to have_content 'Available Spaces'
-    expect(page).to have_content 'Jaguars House'
+    save_and_open_page
+    click_link 'Delete'
+    expect(page).not_to have_content 'Jaguars house'
   end
 end

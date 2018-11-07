@@ -20,12 +20,43 @@ class Makersbnb < Sinatra::Base
 
   post '/login' do
     if User.log_in(params[:email], params[:password])
-      @user = User.first(params[:email])
+      @user = User.first(email: params[:email])
       session[:user_id] = @user.id
-      redirect '/'
+      session[:email] = @user.email
+      redirect '/profile'
     else
       redirect '/login'
     end
+  end
+
+  get '/profile' do
+    @user = User.first(id: session[:user_id])
+    @spaces = Space.all(user_id: session[:user_id])
+    erb :profile
+  end
+
+  get '/edit-space/:id' do
+    @space = Space.first(id: params[:id])
+    erb :editspace
+  end
+
+  get '/delete-space/:id' do
+    @space = Space.first(id: params[:id])
+    @space.destroy
+    redirect '/profile'
+  end
+
+  post '/edited/:id' do
+    @space = Space.first(params[:id])
+    @space.update(
+      title: params[:title],
+      location: params[:location],
+      description: params[:description],
+      guests: params[:guests],
+      type: params[:type],
+      user_id: session[:user_id]
+    )
+    redirect '/profile'
   end
 
   post '/registered' do
@@ -35,7 +66,7 @@ class Makersbnb < Sinatra::Base
       password: params[:password]
     )
     session[:user_id] = @user.id
-    erb :registered
+    redirect '/profile'
   end
 
   get '/new-space' do
@@ -51,7 +82,7 @@ class Makersbnb < Sinatra::Base
       type: params[:type],
       user_id: session[:user_id]
     )
-    erb :listed
+    redirect '/profile'
   end
 
   get '/spaces' do
