@@ -5,7 +5,7 @@ feature 'spaces' do
     fill_in('email', with: 'an@email.com')
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')
-    click_button :submit #<- cannot find button!!
+    click_button :submit # <- cannot find button!!
     click_button :home
     click_button 'New Space'
     fill_in('title', with: 'Jaguars House')
