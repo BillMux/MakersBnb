@@ -1,6 +1,26 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/delete_spaces_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/edit_space_spec.rb": [
         1,
         1,
@@ -150,6 +170,6 @@
         null
       ]
     },
-    "timestamp": 1541599311
+    "timestamp": 1541599922
   }
 }
