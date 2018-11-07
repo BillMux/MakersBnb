@@ -18,3 +18,13 @@ def lists_spaces
   click_button 'Submit'
   click_button 'home'
 end
+
+def sign_in_go_home
+  visit '/'
+  click_button 'Create Account'
+  fill_in('name', with: 'Jaguar2 Legend')
+  fill_in('email', with: 'an@ehhmail.com')
+  fill_in('password', with: 'nnnn')
+  click_button :submit
+  click_button 'Home'
+end
