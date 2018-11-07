@@ -104,7 +104,8 @@ class Makersbnb < Sinatra::Base
     Booking.create(
       start_date: params[:start_date],
       end_date: params[:end_date],
-      user_id: session[:user_id]
+      user_id: session[:user_id],
+      space_id: params[:id]
       )
       redirect '/:id/booking'
   end

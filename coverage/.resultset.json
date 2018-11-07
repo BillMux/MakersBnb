@@ -1,8 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/features/booking_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/booking_spec.rb": [
         null,
         null,
         null,
@@ -11,9 +10,7 @@
         null,
         null
       ],
-      "/Users/muge/Projects/MakersBnb/spec/features/index_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/delete_spaces_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/delete_spaces_spec.rb": [
         1,
         1,
         1,
@@ -36,7 +33,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/edit_space_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/edit_space_spec.rb": [
         1,
         1,
         1,
@@ -62,8 +59,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/index_spec.rb": [
->>>>>>> master
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/index_spec.rb": [
         1,
         1,
         1,
@@ -89,10 +85,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/features/list_of_spaces_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/list_of_spaces_spec.rb": [
         1,
         1,
         1,
@@ -109,22 +102,14 @@
         1,
         1,
         1,
->>>>>>> master
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/features/listing_spaces_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/listing_spaces_spec.rb": [
->>>>>>> master
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         null,
@@ -139,11 +124,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/features/login_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/login_spec.rb": [
->>>>>>> master
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/login_spec.rb": [
         1,
         1,
         1,
@@ -154,13 +135,9 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/features/sign_up_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/sign_up_spec.rb": [
->>>>>>> master
         1,
         1,
         1,
@@ -171,7 +148,7 @@
         null,
         null
       ],
-      "/Users/muge/Projects/MakersBnb/spec/models/booking_spec.rb": [
+      "/Users/san-di/makersAcademy/MakersBnb/spec/models/booking_spec.rb": [
         1,
         1,
         1,
@@ -187,11 +164,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/models/space_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/space_spec.rb": [
->>>>>>> master
+      "/Users/san-di/makersAcademy/MakersBnb/spec/models/space_spec.rb": [
         1,
         1,
         1,
@@ -209,11 +182,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/muge/Projects/MakersBnb/spec/models/user_spec.rb": [
-=======
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/user_spec.rb": [
->>>>>>> master
+      "/Users/san-di/makersAcademy/MakersBnb/spec/models/user_spec.rb": [
         1,
         1,
         1,
@@ -229,10 +198,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1541602490
-=======
-    "timestamp": 1541600809
->>>>>>> master
+    "timestamp": 1541607631
   }
 }
