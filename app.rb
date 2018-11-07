@@ -69,5 +69,14 @@ class Makersbnb < Sinatra::Base
     erb :booking
   end
 
+  post '/:id/booking' do
+    Booking.create(
+      start_date: params[:start_date],
+      end_date: params[:end_date],
+      user_id: session[:user_id]
+      )
+      redirect '/:id/booking'
+  end
+
   run! if app_file == $PROGRAM_NAME
 end

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/booking_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/booking_spec.rb": [
         null,
         null,
         null,
@@ -10,7 +10,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/index_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/index_spec.rb": [
         1,
         1,
         1,
@@ -36,7 +36,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/list_of_spaces_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/list_of_spaces_spec.rb": [
         1,
         1,
         1,
@@ -47,7 +47,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/listing_spaces_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         null,
@@ -62,7 +62,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/login_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/login_spec.rb": [
         1,
         1,
         1,
@@ -73,7 +73,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/sign_up_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         1,
@@ -86,7 +86,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/booking_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/models/booking_spec.rb": [
         1,
         1,
         1,
@@ -102,7 +102,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/space_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/models/space_spec.rb": [
         1,
         1,
         1,
@@ -120,7 +120,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/user_spec.rb": [
+      "/Users/muge/Projects/MakersBnb/spec/models/user_spec.rb": [
         1,
         1,
         1,
@@ -136,6 +136,6 @@
         null
       ]
     },
-    "timestamp": 1541599865
+    "timestamp": 1541602490
   }
 }
