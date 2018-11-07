@@ -1,30 +1,29 @@
+<h1>Welcome,
+  <%= @user.name %>!</h1>
 
+<form action="/" method='get'>
+  <input id='home' type='submit' value="Home">
+</form>
 
-  <h1>Welcome, <%= @user.name %>!</h1>
-
-    <form action="/" method='get'>
-      <input id='home' type='submit' value="Home">
-    </form>
-
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Location</th>
-        <th>Description</th>
-        <th>No. of guests</th>
-        <th>Type</th>
-      </tr>
-      <% @spaces.each do |space| %>
-      <tr>
-        <td><%= space.title %></td>
-        <td><%= space.location %></td>
-        <td><%= space.description %></td>
-        <td><%= space.guests %></td>
-        <td><%= space.type %></td>
-        <td>
-          <a href="/edit-space/<%= space.id %>">Edit</a>
-          <a href="/delete-space/<%= space.id %>">Delete</a>
-        </td>
-      </tr>
-        <% end %>
-    </table>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>No. of guests</th>
+    <th>Type</th>
+  </tr>
+  <% @spaces.each do |space| %>
+    <tr>
+      <td><%= space.title %></td>
+      <td><%= space.location %></td>
+      <td><%= space.description %></td>
+      <td><%= space.guests %></td>
+      <td><%= space.type %></td>
+      <td>
+        <a href="/edit-space/<%= space.id %>">Edit</a>
+        <a href="/delete-space/<%= space.id %>">Delete</a>
+      </td>
+    </tr>
+  <% end %>
+</table>
