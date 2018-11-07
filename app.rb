@@ -112,7 +112,7 @@ class Makersbnb < Sinatra::Base
       user_id: session[:user_id],
       space_id: params[:id]
       )
-      redirect '/:id/booking'
+      redirect '/'
   end
 
   run! if app_file == $PROGRAM_NAME
