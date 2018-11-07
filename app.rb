@@ -50,6 +50,7 @@ class Makersbnb < Sinatra::Base
       type: params[:type],
       user_id: session[:user_id]
     )
+    redirect '/profile'
   end
 
   post '/registered' do
