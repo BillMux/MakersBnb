@@ -31,7 +31,12 @@ class Makersbnb < Sinatra::Base
 
   get '/profile' do
     @user = User.first(:id => session[:user_id])
+    @spaces = Space.all(:user_id => session[:user_id])
     erb :profile
+  end
+
+  get '/edit-space/:id' do
+    @space = Space.all(:id => params[:id])
   end
 
   post '/registered' do

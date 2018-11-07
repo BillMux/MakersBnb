@@ -15,6 +15,32 @@
       <input id='home' type='submit' value="Home">
     </form>
 
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>No. of guests</th>
+        <th>Type</th>
+      </tr>
+      <% @spaces.each do |space| %>
+      <tr>
+        <td><%= space.title %></td>
+        <td><%= space.location %></td>
+        <td><%= space.description %></td>
+        <td><%= space.guests %></td>
+        <td><%= space.type %></td>
+        <td>
+          <a href="/edit-space/<%= space.id %>">Edit</a>
+        </td>
+        <!-- <td><form action="/edit-space" method="get">
+          <input type="submit" value="Edit">
+          <input type="hidden" id="<%=space.id%>">
+        </form></td> -->
+      </tr>
+        <% end %>
+    </table>
+
   </body>
 
 </html>
