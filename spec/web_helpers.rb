@@ -8,7 +8,7 @@ def signup
 end
 
 def lists_spaces
-  click_button 'Home'
+  click_button :home
   click_button 'post_space'
   fill_in('title', with: 'Jaguars House')
   fill_in('description', with: 'A cosy and quiet double room')

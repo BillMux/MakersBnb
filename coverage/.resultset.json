@@ -1,6 +1,32 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/edit_space_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/index_spec.rb": [
         1,
         1,
@@ -28,6 +54,19 @@
         null
       ],
       "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -111,6 +150,6 @@
         null
       ]
     },
-    "timestamp": 1541591259
+    "timestamp": 1541599311
   }
 }
