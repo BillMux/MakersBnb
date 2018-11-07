@@ -1,0 +1,6 @@
+<h1> Booked Dates </h1>
+
+<% @booking.each do |booking| %>
+  <sub> <%= booking.start_date %> </sub>
+  <sub> <%= booking.end_date %> </sub>
+<% end %>

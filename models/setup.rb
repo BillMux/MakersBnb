@@ -9,6 +9,7 @@ end
 
 require_relative 'user'
 require_relative 'space'
+require_relative 'booking'
 
 DataMapper.finalize
 DataMapper.auto_upgrade!

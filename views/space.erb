@@ -9,12 +9,17 @@
 
 <body>
 
-  <%= @space.title %>
-<%= @space.location %>
-<%= @space.description %>
-<%= @space.guests %>
-<%= @space.type %>
-<%= @space.user_id %>
+  <li><%= @space.title %></li>
+  <li><%= @space.location %></li>
+  <li><%= @space.description %></li>
+  <li><%= @space.guests %></li>
+  <li><%= @space.type %></li>
+  <li><%= @space.user_id %></li>
+
+<form action="/<%= @space.title %>/booking" method="get">
+  <button> Book </button>
+</form>
+
 
 </html>
 </body>

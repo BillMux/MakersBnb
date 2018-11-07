@@ -7,5 +7,6 @@ class Space
   property :guests, Integer
   property :type, String
 
+  has 1, :booking
   belongs_to :user
 end

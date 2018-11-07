@@ -63,5 +63,11 @@ class Makersbnb < Sinatra::Base
     @space = Space.first(params[:id])
     erb :space
   end
+
+  get '/:id/booking' do
+    @booking = Booking.first(params[:id])
+    erb :booking
+  end
+
   run! if app_file == $PROGRAM_NAME
 end
