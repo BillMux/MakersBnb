@@ -36,7 +36,20 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/edit-space/:id' do
-    @space = Space.all(:id => params[:id])
+    @space = Space.first(:id => params[:id])
+    erb :editspace
+  end
+
+  post '/edited/:id' do
+    @space = Space.first(params[:id])
+    @space.update(
+      title: params[:title],
+      location: params[:location],
+      description: params[:description],
+      guests: params[:guests],
+      type: params[:type],
+      user_id: session[:user_id]
+    )
   end
 
   post '/registered' do
