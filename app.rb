@@ -60,12 +60,12 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/spaces/:id' do
-    @space = Space.first(params[:id])
+    @space = Space.first(:id => params[:id])
     erb :space
   end
 
   get '/:id/booking' do
-    @booking = Booking.first(params[:id])
+    @bookings = Booking.all
     erb :booking
   end
 
