@@ -29,6 +29,11 @@ class Makersbnb < Sinatra::Base
     end
   end
 
+  get '/logout' do
+    session.clear
+    redirect '/'
+  end
+
   get '/profile' do
     @user = User.first(id: session[:user_id])
     @spaces = Space.all(user_id: session[:user_id])

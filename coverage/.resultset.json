@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/delete_spaces_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/delete_spaces_spec.rb": [
         1,
         1,
         1,
@@ -23,59 +23,9 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/edit_space_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/edit_space_spec.rb": [
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/index_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
         1,
         1,
         1,
@@ -99,7 +49,57 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/listing_spaces_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/index_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_spaces_spec.rb": [
         1,
         1,
         null,
@@ -114,7 +114,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/login_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/login_spec.rb": [
         1,
         1,
         1,
@@ -125,7 +125,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/features/sign_up_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
         1,
         1,
         1,
@@ -138,7 +138,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/space_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/space_spec.rb": [
         1,
         1,
         1,
@@ -156,7 +156,7 @@
         null,
         null
       ],
-      "/Users/williammuxworthy/Documents/makers_academy/week6/MakersBnb/spec/models/user_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/user_spec.rb": [
         1,
         1,
         1,
@@ -172,6 +172,6 @@
         null
       ]
     },
-    "timestamp": 1541602920
+    "timestamp": 1541605402
   }
 }
