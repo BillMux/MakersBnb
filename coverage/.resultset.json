@@ -1,8 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/booking_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/booking_spec.rb": [
         null,
         null,
         null,
@@ -11,11 +10,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/delete_spaces_spec.rb": [
-        1,
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/delete_spaces_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -37,11 +32,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/edit_space_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/edit_space_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -67,11 +58,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/index_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/index_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -97,11 +84,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/list_of_spaces_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -125,11 +108,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/listing_spaces_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/listing_spaces_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         null,
@@ -144,11 +123,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/login_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/login_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -159,12 +134,8 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/features/sign_up_spec.rb": [
-        1,
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/sign_up_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
+        1,
         1,
         1,
         1,
@@ -176,7 +147,7 @@
         null,
         null
       ],
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/booking_spec.rb": [
+      "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/booking_spec.rb": [
         1,
         1,
         1,
@@ -192,11 +163,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/space_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/space_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -214,11 +181,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
-      "/Users/san-di/makersAcademy/MakersBnb/spec/models/user_spec.rb": [
-=======
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/models/user_spec.rb": [
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
         1,
         1,
         1,
@@ -234,10 +197,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1541607703
-=======
-    "timestamp": 1541605402
->>>>>>> b38c3980ce15e64a55a87e03aa4eede3d5e34604
+    "timestamp": 1541608482
   }
 }
