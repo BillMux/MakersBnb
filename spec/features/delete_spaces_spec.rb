@@ -14,5 +14,8 @@ feature 'spaces' do
     fill_in('guests', with: 2)
     fill_in('type', with: 'room')
     click_button 'Submit'
+    save_and_open_page
+    click_link 'Delete'
+    expect(page).not_to have_content 'Jaguars house'
   end
 end

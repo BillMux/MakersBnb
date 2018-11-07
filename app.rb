@@ -40,6 +40,12 @@ class Makersbnb < Sinatra::Base
     erb :editspace
   end
 
+  get '/delete-space/:id' do
+    @space = Space.first(:id => params[:id])
+    @space.destroy
+    redirect '/profile'
+  end
+
   post '/edited/:id' do
     @space = Space.first(params[:id])
     @space.update(
@@ -52,6 +58,8 @@ class Makersbnb < Sinatra::Base
     )
     redirect '/profile'
   end
+
+
 
   post '/registered' do
     @user = User.create(
@@ -76,7 +84,7 @@ class Makersbnb < Sinatra::Base
       type: params[:type],
       user_id: session[:user_id]
     )
-    erb :listed
+    redirect '/profile'
   end
 
   get '/spaces' do
