@@ -1,28 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>MakersBnB</title>
-<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
-</head>
-
-<body>
-
-  <div>
-  <h1> Available Spaces </h1>
+<div>
+  <h1>
+    Available Spaces
+  </h1>
   <ul>
-  <% @spaces.each do |space| %>
-  <li>
-    <section>
+    <% @spaces.each do |space| %>
       <li>
-        <a href="/spaces/<%= space.id %>">
-          <%= space.title %>
-        </a>
-        <!-- <input type="hidden" id="<%=space.title%>"> -->
-        <sub> Location: <%= space.location %> </sub>
-        <sub> No. Guests: <%= space.guests %> </sub>
-      </li>
+        <section>
+        <li>
+          <a href="/spaces/<%= space.id %>">
+            <%= space.title %>
+          </a>
+          <!-- <input type="hidden" id="<%=space.title%>"> -->
+          <sub>
+            Location:
+            <%= space.location %>
+          </sub>
+          <sub>
+            No. Guests:
+            <%= space.guests %>
+          </sub>
+        </li>
       <% end %>
     </section>
   </ul>

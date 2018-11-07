@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MakersBnB</title>
+<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
+</head>
+
+<body>
+  <section id="nav-bar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/signup">Signup</a></li>
+      <li><a href="/spaces">Spaces</a></li>
+      <li><a href="/profile">Profile</a></li>
+    </ul>
+  </section>
+
+  <form action="/logout" method="get">
+    <input type="submit" id="logout" value="Log Out">
+  </form>
+
+
+<%= yield %>
+</body>
+</html>

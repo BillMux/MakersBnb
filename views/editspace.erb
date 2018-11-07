@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>MakersBnB</title>
-<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
-</head>
-
-  <body>
-
-    <h1>New space</h1>
-    <form action="/edited/<%= @space.id %>" method="post">
-      <input type="text" name="title"       value="<%= @space.title %>"       placeholder="title"       />
-      <input type="text" name="description" value="<%= @space.description %>" placeholder="description" />
-      <input type="text" name="location"    value="<%= @space.location %>"    placeholder="location"    />
-      <input type="text" name="guests"      value="<%= @space.guests %>"      placeholder="guests"      />
-      <input type="text" name="type"        value="<%= @space.type %>"        placeholder="type"        />
-      <input type="submit" value="Submit" />
-    </form>
-
-  </body>
-</html>
+<h1>New space</h1>
+<form action="/edited/<%= @space.id %>" method="post">
+  <input type="text" name="title"       value="<%= @space.title %>"       placeholder="title"       />
+  <input type="text" name="description" value="<%= @space.description %>" placeholder="description" />
+  <input type="text" name="location"    value="<%= @space.location %>"    placeholder="location"    />
+  <input type="text" name="guests"      value="<%= @space.guests %>"      placeholder="guests"      />
+  <input type="text" name="type"        value="<%= @space.type %>"        placeholder="type"        />
+  <input type="submit" value="Submit" />
+</form>
