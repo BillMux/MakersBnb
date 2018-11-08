@@ -5,27 +5,74 @@
 <title>MakersBnB</title>
 <!-- <link rel="stylesheet" type="text/css" href="style/index.css">
 <link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
+<style type="text/css">
+
+body {
+  height:100%;
+  width:100%;
+  background-image:url('http://getwallpapers.com/wallpaper/full/0/6/2/17283.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: sans-serif;
+  position: relative;
+}
+
+
+nav {
+  width: 100%;
+
+}
+ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li:hover {
+  background: : #e91e63;
+}
+
+ul li a {
+  color: fff;
+  text-decoration: none;
+}
+
+</style>
 </head>
 
 <body>
+<nav>
+<ul>
+<li><h4>MakersBnB</h4><li>
 
-<h1>MakersBnB</h1>
-
-<form action="/signup" method="get">
-  <input type="submit" id="create_account" value="Create Account">
-</form>
-
-<form action="/login" method="get">
-  <input type="submit" id="log_in" value="Log In">
-</form>
-
-<form action="/spaces" method="get">
+<li><form action="/spaces" method="get">
   <input type="submit" id="view_spaces" value="View Spaces">
-</form>
+</form></li>
 
-<form action="/new-space" method="get">
+<li><form action="/new-space" method="get">
   <input type="submit" id="post_space" value="New Space">
-</form>
+</form></li>
+
+<li><form action="/login" method="get">
+  <input type="submit" id="log_in" value="Log In">
+</form></li>
+
+<li><form action="/signup" method="get">
+  <input type="submit" id="create_account" value="Create Account">
+</form></li>
+
+
+</ul>
+
+</nav>
 
 </body>
 
