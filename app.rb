@@ -19,6 +19,17 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/calender' do
+    @bookings = Booking.all(:space_id => 1)
+    @disabled = @bookings.map { |booking|
+      sy = booking.start_date.year
+      sm = booking.start_date.month
+      sd = booking.start_date.day
+      ey = booking.end_date.year
+      em = booking.end_date.month
+      ed = booking.end_date.day
+      { from: [sy, sm-1, sd], to: [ey, em-1, ed]}
+    }
+    # @bookings = @bookings.join(', ')
     erb :datepicker
   end
 

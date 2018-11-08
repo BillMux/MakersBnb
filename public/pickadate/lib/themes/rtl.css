@@ -1,10 +1,4 @@
-/*!
- * Styling for RTL (right-to-left) languages using pickadate.js
- */
-/**
- * Switch the direction - only really necessary if
- * it hasn’t already been applied higher up in the DOM.
- */
+
 .picker {
   direction: rtl;
 }
