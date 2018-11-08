@@ -41,6 +41,7 @@ class Makersbnb < Sinatra::Base
   get '/profile' do
     @user = User.first(id: session[:user_id])
     @spaces = Space.all(user_id: session[:user_id])
+    @bookings = Booking.all(user_id: session[:user_id])
     erb :profile
   end
 
