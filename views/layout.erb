@@ -11,7 +11,9 @@
   <section id="nav-bar">
     <ul>
       <li><a href="/">Home</a></li>
+      <% if session[:user_id].nil? %>
       <li><a href="/login">Login</a></li>
+      <% end %>
       <li><a href="/signup">Signup</a></li>
       <li><a href="/spaces">Spaces</a></li>
       <% unless session[:user_id].nil? %>

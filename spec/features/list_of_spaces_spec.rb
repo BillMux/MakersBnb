@@ -1,7 +1,7 @@
 feature 'available spaces' do
   scenario 'i can see a list of available spaces' do
     visit '/'
-    click_button 'Create Account'
+    click_link 'Signup'
     fill_in('email', with: 'an@ehhfkuhmail.com')
     fill_in('name', with: 'Jaguar3 Legend')
     fill_in('password', with: 'nnnn')
