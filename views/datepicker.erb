@@ -27,7 +27,7 @@
     })
     var picker = $input.pickadate('picker')
     picker.set('disable', [
-      disabled
+        <%= @disabled.each { |date| date } %>
     ])
 
 
