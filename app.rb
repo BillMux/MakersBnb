@@ -18,6 +18,10 @@ class Makersbnb < Sinatra::Base
     erb :login
   end
 
+  get '/calender' do
+    erb :datepicker
+  end
+
   post '/login' do
     if User.log_in(params[:email], params[:password])
       @user = User.first(email: params[:email])
