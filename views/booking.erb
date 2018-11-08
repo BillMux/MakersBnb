@@ -1,10 +1,12 @@
 <h1> Booked Dates </h1>
 
 <% @bookings.each do |booking| %>
-  <li>
-    From: <%= booking.start_date %>
-    To: <%= booking.end_date %>
-  </li>
+  <% if booking.space_id == params[:id].to_i%>
+    <li>
+      From: <%= booking.start_date %>
+      To: <%= booking.end_date %>
+    </li>
+  <% end %>
 <% end %>
 
 
