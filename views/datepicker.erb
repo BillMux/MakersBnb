@@ -2,18 +2,17 @@
 <head>
   <link rel="stylesheet" href="pickadate/lib/themes/classic.css">
   <link rel="stylesheet" href="pickadate/lib/themes/classic.date.css">
-</head>
-
-<body>
-<form>
-    <input type="text" id="input_from" class="picker__input picker__input--active">
-</form>
-
   <script src="jquery/dist/jquery.js"></script>
   <script src="pickadate/lib/legacy.js"></script>
   <script src="pickadate/lib/picker.js"></script>
   <script src="pickadate/lib/picker.date.js"></script>
+</head>
 
+<body>
+
+<form action="/booking/<%= params[:id] %>" method="post">
+    <input type="text" id="input_from" class="picker__input picker__input--active">
+</form>
 
   <script>
     var disabled = <%= @disabled.to_json %>

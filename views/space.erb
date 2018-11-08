@@ -7,6 +7,6 @@
   <li>£<%= @space.price %>per night</li>
   <li><%= @space.user_id %></li>
 
-<form action="/<%= @space.id %>/booking" method="get">
+<form action="/booking/<%= @space.id %>" method="get">
   <button> Book </button>
 </form>

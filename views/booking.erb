@@ -1,17 +1,33 @@
-<h1> Booked Dates </h1>
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="../pickadate/lib/themes/classic.css">
+  <link rel="stylesheet" href="../pickadate/lib/themes/classic.date.css">
+  <script src="../jquery/dist/jquery.js"></script>
+  <script src="../pickadate/lib/legacy.js"></script>
+  <script src="../pickadate/lib/picker.js"></script>
+  <script src="../pickadate/lib/picker.date.js"></script>
+</head>
 
-<% @bookings.each do |booking| %>
-  <% if booking.space_id == params[:id].to_i%>
-    <li>
-      From: <%= booking.start_date %>
-      To: <%= booking.end_date %>
-    </li>
-  <% end %>
-<% end %>
+<body>
+  <form action="/booking/<%= params[:id] %>" method="post" >
+    <input type="text" id="input_from" class="picker__input picker__input--active">
+    <input type="Submit" value="Submit">
+  </form>
+
+  <script>
+    var disabled = <%= @disabled.to_json %>
+    var disabledLength = disabled.length
+    var $input = $('#input_from').pickadate({
+        min: true,
+        set: true
+    })
+    var picker = $input.pickadate('picker')
+    for (var i = 0; i < disabledLength; i++) {
+      picker.set('disable', [
+        disabled[i]
+      ])
+    }
+  </script>
 
 
-<form action="/<%= params[:id] %>/booking" method="post" >
-  <input type="date" id="start_date" name="start_date">
-  <input type="date" id="end_date" name='end_date'>
-  <input type="Submit" value="Submit">
-</form>
+</body>
