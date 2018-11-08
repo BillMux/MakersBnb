@@ -108,16 +108,21 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/booking/:id' do
-    @bookings = Booking.all(:space_id => 9)
-    @disabled = @bookings.map { |booking|
-      sy = booking.start_date.year
-      sm = booking.start_date.month
-      sd = booking.start_date.day
-      ey = booking.end_date.year
-      em = booking.end_date.month
-      ed = booking.end_date.day
-      { from: [sy, sm-1, sd], to: [ey, em-1, ed]}
-    }
+    @bookings = Booking.all(:space_id => params[:id])
+    puts @bookings
+    if @bookings.empty?
+      @disabled = []
+    else
+      @disabled = @bookings.map { |booking|
+        sy = booking.start_date.year
+        sm = booking.start_date.month
+        sd = booking.start_date.day
+        ey = booking.end_date.year
+        em = booking.end_date.month
+        ed = booking.end_date.day
+        { from: [sy, sm-1, sd], to: [ey, em-1, ed - 1]}
+      }
+    end
     # @bookings = @bookings.join(', ')
     erb :booking
   end

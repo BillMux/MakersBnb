@@ -10,20 +10,33 @@
 
 <body>
   <form action="/booking/<%= params[:id] %>" method="post" >
-    <input type="text" id="input_from" class="picker__input picker__input--active">
+    <input type="date" id="start_date" name=start_date placeholder="Start Date" class="picker__input picker__input--active">
+    <input type="date" id="end_date" name=end_date placeholder="End Date" class="picker__input picker__input--active">
     <input type="Submit" value="Submit">
   </form>
 
   <script>
     var disabled = <%= @disabled.to_json %>
     var disabledLength = disabled.length
-    var $input = $('#input_from').pickadate({
+    var $input = $('#start_date').pickadate({
         min: true,
         set: true
     })
     var picker = $input.pickadate('picker')
     for (var i = 0; i < disabledLength; i++) {
       picker.set('disable', [
+        disabled[i]
+      ])
+    }
+
+
+    var $end = $('#end_date').pickadate({
+        min: true,
+        set: true
+    })
+    var dicker = $end.pickadate('picker')
+    for (var i = 0; i < disabledLength; i++) {
+      dicker.set('disable', [
         disabled[i]
       ])
     }
