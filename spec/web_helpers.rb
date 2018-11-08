@@ -5,6 +5,7 @@ def signup
   fill_in('name', with: 'Jaguar Legend')
   fill_in('password', with: 'password')
   click_button 'submit'
+  save_and_open_page
 end
 
 def lists_spaces

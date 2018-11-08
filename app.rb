@@ -23,9 +23,12 @@ class Makersbnb < Sinatra::Base
       @user = User.first(email: params[:email])
       session[:user_id] = @user.id
       session[:email] = @user.email
+      session[:password] = @user.password
       redirect '/profile'
-    else
-      redirect '/login'
+    elsif params[:password] != session[:password]
+      redirect '/wrongpassword'
+    elsif params[:email] != session[:email]
+      redirect '/wrongemail'
     end
   end
 
