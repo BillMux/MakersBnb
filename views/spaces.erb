@@ -10,7 +10,6 @@
           <a href="/spaces/<%= space.id %>">
             <%= space.title %>
           </a>
-          <!-- <input type="hidden" id="<%=space.title%>"> -->
           <sub>
             Location:
             <%= space.location %>
@@ -18,6 +17,10 @@
           <sub>
             No. Guests:
             <%= space.guests %>
+          </sub>
+          <sub>
+            Price:
+            £<%= space.price %> per night
           </sub>
         </li>
       <% end %>

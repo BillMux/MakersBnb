@@ -42,6 +42,7 @@ class Makersbnb < Sinatra::Base
 
   get '/edit-space/:id' do
     @space = Space.first(id: params[:id])
+    puts params[:id]
     erb :editspace
   end
 
@@ -52,13 +53,14 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/edited/:id' do
-    @space = Space.first(params[:id])
+    @space = Space.first(id: params[:id])
     @space.update(
       title: params[:title],
       location: params[:location],
       description: params[:description],
       guests: params[:guests],
       type: params[:type],
+      price: params[:price],
       user_id: session[:user_id]
     )
     redirect '/profile'
@@ -85,6 +87,7 @@ class Makersbnb < Sinatra::Base
       description: params[:description],
       guests: params[:guests],
       type: params[:type],
+      price: params[:price],
       user_id: session[:user_id]
     )
     redirect '/profile'
@@ -96,7 +99,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/spaces/:id' do
-    @space = Space.first(:id => params[:id])
+    @space = Space.first(id: params[:id])
     erb :space
   end
 
@@ -111,8 +114,8 @@ class Makersbnb < Sinatra::Base
       end_date: params[:end_date],
       user_id: session[:user_id],
       space_id: params[:id]
-      )
-      redirect '/:id/booking'
+    )
+    redirect '/:id/booking'
   end
 
   run! if app_file == $PROGRAM_NAME

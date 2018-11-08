@@ -6,6 +6,7 @@ class Space
   property :description, String
   property :guests, Integer
   property :type, String
+  property :price, Integer
 
   has n, :bookings
   belongs_to :user

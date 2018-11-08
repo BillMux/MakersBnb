@@ -29,10 +29,12 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/edit_space_spec.rb": [
+        1,
         1,
         1,
         1,
@@ -85,6 +87,7 @@
         null
       ],
       "/Users/alfie/Desktop/code/week6/MakersBnb/spec/features/list_of_spaces_spec.rb": [
+        1,
         1,
         1,
         1,
@@ -176,6 +179,7 @@
         null,
         null,
         null,
+        null,
         2,
         null,
         null,
@@ -197,6 +201,6 @@
         null
       ]
     },
-    "timestamp": 1541608574
+    "timestamp": 1541692463
   }
 }

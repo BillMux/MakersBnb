@@ -1,11 +1,10 @@
 
-<body>
-
   <li><%= @space.title %></li>
   <li><%= @space.location %></li>
   <li><%= @space.description %></li>
   <li><%= @space.guests %></li>
   <li><%= @space.type %></li>
+  <li>£<%= @space.price %>per night</li>
   <li><%= @space.user_id %></li>
 
 <form action="/<%= @space.id %>/booking" method="get">

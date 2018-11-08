@@ -13,6 +13,7 @@ feature 'spaces' do
     fill_in('location', with: 'Central London')
     fill_in('guests', with: 2)
     fill_in('type', with: 'room')
+    fill_in('price', with: 20)
     click_button 'Submit'
     click_link 'Delete'
     expect(page).not_to have_content 'Jaguars house'
