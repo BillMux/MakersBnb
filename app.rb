@@ -1,10 +1,13 @@
 require 'sinatra/base'
+require 'sinatra/flash'
 require 'dm-migrations'
 require 'dm-postgres-adapter'
 require './models/setup'
 
+
 class Makersbnb < Sinatra::Base
   enable :sessions
+  register Sinatra::Flash
 
   get '/' do
     erb :index
@@ -25,6 +28,7 @@ class Makersbnb < Sinatra::Base
       session[:email] = @user.email
       redirect '/profile'
     else
+      flash[:alert] = 'Please check you intered your info is correct.' if User.wrong_email(params[:email], params[:password])
       redirect '/login'
     end
   end
