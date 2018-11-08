@@ -10,6 +10,12 @@ class User
 
   def self.log_in(email, password)
     user = User.first(email: email)
-    user.password == password
+    user.password == password if user.is_a?(User)
   end
+
+  def self.wrong_email(email, password)
+    user = User.first(email: email)
+    user == nil
+  end
+
 end
