@@ -1,7 +1,7 @@
 feature 'spaces' do
   scenario 'can update a space' do
     visit '/'
-    click_button 'Create Account'
+    click_link 'Signup'
     fill_in('email', with: 'an@email.com')
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')

@@ -1,7 +1,7 @@
 feature 'spaces' do
   scenario 'can be deleted' do
     visit '/'
-    click_button 'Create Account'
+    click_link 'Signup'
     fill_in('email', with: 'an@ehhmail.com')
     fill_in('name', with: 'Jaguar2 Legend')
     fill_in('password', with: 'nnnn')
