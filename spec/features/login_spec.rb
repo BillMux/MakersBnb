@@ -12,7 +12,7 @@ feature 'login' do
    fill_in('email', with: 'muge.hasilc@hotmail.com')
    fill_in('password', with: 'kizkulesi')
    click_button 'submit'
-   expect(page).to have_content 'Please check you intered your info is correct.'
+   expect(page).to have_content 'Please check you entered your info is correct.'
  end
 end
 

@@ -28,7 +28,7 @@ class Makersbnb < Sinatra::Base
       session[:email] = @user.email
       redirect '/profile'
     else
-      flash[:alert] = 'Please check you intered your info is correct.' if User.wrong_email(params[:email], params[:password])
+      flash[:alert] = 'Please check you entered your info is correct.' if User.wrong_email(params[:email], params[:password])
       redirect '/login'
     end
   end
