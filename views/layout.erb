@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MakersBnB</title>
+<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
+<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
+</head>
+
+<body>
+  <section id="nav-bar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <% if session[:user_id].nil? %>
+      <li><a href="/login">Login</a></li>
+      <% end %>
+      <li><a href="/signup">Signup</a></li>
+      <li><a href="/spaces">Spaces</a></li>
+      <% unless session[:user_id].nil? %>
+      <li><a href="/profile">Profile</a></li>
+      <% end %>
+      <li><a href="/logout">Log Out</a></li>
+    </ul>
+  </section>
+  
+<% flash.keys.each do |type| %>
+  <div data-alert class="flash <%= type %> alert-box radius">
+    <%= flash[type] %>
+    <a href="#" class="close">&times;</a>
+  </div>
+<% end %>
+
+
+<%= yield %>
+</body>
+</html>

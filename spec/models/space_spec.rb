@@ -8,6 +8,7 @@ describe Space do
           location: 'Central London',
           guests: 2,
           type: 'room',
+          price: 20,
           user_id: 2
         )
       end .to change { Space.count }.by(1)

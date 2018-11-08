@@ -1,23 +1,13 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>MakersBnB</title>
-<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
-</head>
+  <body>
+    Log in
+    <% flash[:alert] = 'Please check your email and password.' %>
+    <form action="/login" method="post">
+      <input type="text" id="email" name="email" placeholder="email">
+      <input type="text" id="password" name="password" placeholder="password">
+      <input type="submit" id="submit" name="Submit">
+    </form>
 
-<body>
 
-Log in
-
-<form action="/login" method="post">
-  <input type="text" id="email" name="email" placeholder="email">
-  <input type="text" id="password" name="password" placeholder="password">
-  <input type="submit" id="submit" name="Submit">
-</form>
-</body>
+  </body>
 </html>
-
-</html>
-</body>

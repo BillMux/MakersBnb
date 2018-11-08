@@ -1,43 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>MakersBnB</title>
-<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
-  </head>
+<h1>Welcome,
+  <%= @user.name %>!</h1>
 
-  <body>
+<form action="/" method='get'>
+  <input id='home' type='submit' value="Home">
+</form>
 
-  <h1>Welcome, <%= @user.name %>!</h1>
-
-    <form action="/" method='get'>
-      <input id='home' type='submit' value="Home">
-    </form>
-
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Location</th>
-        <th>Description</th>
-        <th>No. of guests</th>
-        <th>Type</th>
-      </tr>
-      <% @spaces.each do |space| %>
-      <tr>
-        <td><%= space.title %></td>
-        <td><%= space.location %></td>
-        <td><%= space.description %></td>
-        <td><%= space.guests %></td>
-        <td><%= space.type %></td>
-        <td>
-          <a href="/edit-space/<%= space.id %>">Edit</a>
-          <a href="/delete-space/<%= space.id %>">Delete</a>
-        </td>
-      </tr>
-        <% end %>
-    </table>
-
-  </body>
-
-</html>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>No. of guests</th>
+    <th>Type</th>
+  </tr>
+  <% @spaces.each do |space| %>
+    <tr>
+      <td><%= space.title %></td>
+      <td><%= space.location %></td>
+      <td><%= space.description %></td>
+      <td><%= space.guests %></td>
+      <td><%= space.type %></td>
+      <td>£<%= space.price %>per night</td>
+      <td>
+        <a href="/edit-space/<%= space.id %>">Edit</a>
+        <a href="/delete-space/<%= space.id %>">Delete</a>
+      </td>
+    </tr>
+  <% end %>
+</table>

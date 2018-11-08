@@ -6,13 +6,13 @@ feature 'index' do
 
   scenario 'a user can sign up' do
     visit '/'
-    click_button :create_account
+    click_link 'Signup'
     expect(page).to have_content 'Sign up'
   end
 
   scenario 'user can log in' do
     visit '/'
-    click_button :log_in
+    click_link 'Login'
     expect(page).to have_content 'Log in'
   end
 

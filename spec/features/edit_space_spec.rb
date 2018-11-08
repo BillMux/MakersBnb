@@ -1,7 +1,7 @@
 feature 'spaces' do
   scenario 'can update a space' do
     visit '/'
-    click_button 'Create Account'
+    click_link 'Signup'
     fill_in('email', with: 'an@email.com')
     fill_in('name', with: 'Jaguar Legend')
     fill_in('password', with: 'password')
@@ -13,6 +13,7 @@ feature 'spaces' do
     fill_in('location', with: 'Central London')
     fill_in('guests', with: 2)
     fill_in('type', with: 'room')
+    fill_in('price', with: 20)
     click_button 'Submit'
     click_button 'Home'
     visit '/profile'

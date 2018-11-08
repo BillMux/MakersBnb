@@ -1,13 +1,17 @@
 <h1> Booked Dates </h1>
 
 <% @bookings.each do |booking| %>
-  <sub> <%= booking.start_date %> </sub>
-  <sub> <%= booking.end_date %> </sub>
+  <% if booking.space_id == params[:id].to_i%>
+    <li>
+      From: <%= booking.start_date %>
+      To: <%= booking.end_date %>
+    </li>
+  <% end %>
 <% end %>
 
 
 <form action="/<%= params[:id] %>/booking" method="post" >
-  <input type="date" id="start_date" placeholder="2018/06/23">
-  <input type="date" id="end_date" placeholder="2018/06/29">
+  <input type="date" id="start_date" name="start_date">
+  <input type="date" id="end_date" name='end_date'>
   <input type="Submit" value="Submit">
 </form>

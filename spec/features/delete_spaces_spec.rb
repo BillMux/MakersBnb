@@ -1,7 +1,7 @@
 feature 'spaces' do
   scenario 'can be deleted' do
     visit '/'
-    click_button 'Create Account'
+    click_link 'Signup'
     fill_in('email', with: 'an@ehhmail.com')
     fill_in('name', with: 'Jaguar2 Legend')
     fill_in('password', with: 'nnnn')
@@ -13,8 +13,8 @@ feature 'spaces' do
     fill_in('location', with: 'Central London')
     fill_in('guests', with: 2)
     fill_in('type', with: 'room')
+    fill_in('price', with: 20)
     click_button 'Submit'
-    save_and_open_page
     click_link 'Delete'
     expect(page).not_to have_content 'Jaguars house'
   end
