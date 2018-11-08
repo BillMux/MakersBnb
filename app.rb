@@ -19,7 +19,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/calender' do
-    @bookings = Booking.all(:space_id => 1)
+    @bookings = Booking.all(:space_id => 9)
     @disabled = @bookings.map { |booking|
       sy = booking.start_date.year
       sm = booking.start_date.month

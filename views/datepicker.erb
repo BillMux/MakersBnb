@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
   <link rel="stylesheet" href="pickadate/lib/themes/classic.css">
   <link rel="stylesheet" href="pickadate/lib/themes/classic.date.css">
@@ -17,20 +16,18 @@
 
 
   <script>
-
     var disabled = <%= @disabled.to_json %>
-    console.log(disabled)
-
+    var disabledLength = disabled.length
     var $input = $('#input_from').pickadate({
         min: true,
         set: true
     })
     var picker = $input.pickadate('picker')
-    picker.set('disable', [
-        <%= @disabled.each { |date| date } %>
-    ])
-
-
+    for (var i = 0; i < disabledLength; i++) {
+      picker.set('disable', [
+        disabled[i]
+      ])
+    }
   </script>
 
 
