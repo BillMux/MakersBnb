@@ -1,10 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>MakersBnb</title>
+  <meta name="description" content="">
+  <style>
+
+  body{
+    font-family:sans-serif;
+    background-color: #e8f3f8;
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+    color:steelblue;
+  }
+
+  form{
+    margin: 20px auto;
+    width: 320px;
+    color: steelblue;
+
+  }
+  input {
+    padding: 10px;
+    font-size: inherit;
+  }
+
+  input[type="text"] {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+  }
+  textarea {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 2px solid steelblue;
+  }
+
+
+</style>
+</head>
+<body>
+
 <h1>New space</h1>
-<form action="/listed" method="post">
-  <input type="text" name="title" placeholder="title"/>
-  <input type="text" name="description" placeholder="description"/>
-  <input type="text" name="location" placeholder="location"/>
-  <input type="text" name="guests" placeholder="guests"/>
-  <input type="text" name="type" value="type" placeholder="type"/>
-  <input type="text" name="price" placeholder="price per night"/>
-  <input type="submit" value="Submit"/>
+
+
+  <form action="/listed"  method="post">
+
+  <input type="text" name="title" placeholder="title" />
+  <input type="text" name="location" placeholder="Location" />
+  <input type="text" name="guests" placeholder="Guests"/><br>
+  <input type="text" name="type" placeholder="Type" />
+  <input type="text" name="price" placeholder="Price"/>
+  <textarea name="description" placeholder="Description"></textarea>
+  <input type="submit"  value="Submit"/>
 </form>
+</body>
+</html>
