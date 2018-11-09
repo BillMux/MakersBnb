@@ -23,6 +23,7 @@
       <td><%= space.type %></td>
       <td>£<%= space.price %>per night</td>
       <td>
+        <a href="/edit-space/<%= space.id %>">Edit</a>
         <a href="/delete-space/<%= space.id %>">Delete</a>
       </td>
     </tr>
@@ -45,7 +46,6 @@
       <td><%= booking.end_date%></td>
       <td>£<%= Space.first(id: booking.space_id).price %>
       <td>
-        <a href="/edit-request/<%= booking.id %>">Edit request</a>
         <a href="/delete-request/<%= booking.id %>">Delete Request</a>
       </td>
     </tr>
