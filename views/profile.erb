@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="../style/profile.css">
+</head>
+
 <h1>Welcome,
   <%= @user.name %>!</h1>
 
@@ -13,6 +17,7 @@
     <th>Description</th>
     <th>No. of guests</th>
     <th>Type</th>
+    <th>Price</th>
   </tr>
   <% @spaces.each do |space| %>
     <tr>
