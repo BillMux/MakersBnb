@@ -108,6 +108,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/booking/:id' do
+    @space = Space.first(id: params[:id])
     @bookings = Booking.all(space_id: params[:id])
     @start_dates = @bookings.map {|booking| booking.start_date.to_s}
     p @start_dates
