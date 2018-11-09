@@ -13,9 +13,8 @@ class User
     user.password == password if user.is_a?(User)
   end
 
-  def self.wrong_email(email, password)
+  def self.wrong_email(email, _password)
     user = User.first(email: email)
-    user == nil
+    user.nil?
   end
-
 end
