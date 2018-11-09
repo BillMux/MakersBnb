@@ -25,3 +25,7 @@
   width: 20%;
   margin: auto;
 }
+
+img {
+  opacity: 0.6;
+}
