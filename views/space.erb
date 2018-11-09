@@ -1,12 +1,21 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="../style/space.css">
+</head>
 
-  <li><%= @space.title %></li>
-  <li><%= @space.location %></li>
-  <li><%= @space.description %></li>
-  <li><%= @space.guests %></li>
-  <li><%= @space.type %></li>
-  <li>£<%= @space.price %>per night</li>
-  <li><%= @space.user_id %></li>
+<section class="image_box">
+  <img border="0" alt="Home" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX19398941.jpg" width="270" height="250">
+</section>
 
-<form action="/booking/<%= @space.id %>" method="get">
-  <button> Book </button>
-</form>
+<section class="space_info_box">
+  <a href="/booking/<%= @space.id %>">Book</a>
+  <ul class="space_info">
+    <li style="font-size: 2em;"><%= @space.title %></li>
+    <li><%= @space.location %></li>
+    <li><%= @space.description %></li>
+    <li>No. guests: <%= @space.guests %></li>
+    <li>Space type: <%= @space.type %></li>
+    <li>£<%= @space.price %> p/n</li>
+    <li>Owner: <%= User.first(id: @space.user_id).name %></li>
+  </ul>
+
+</section>

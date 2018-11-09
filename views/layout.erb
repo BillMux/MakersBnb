@@ -3,25 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <title>MakersBnB</title>
-<!-- <link rel="stylesheet" type="text/css" href="style/index.css">
-<link rel="icon" type="image/x-icon" href="public/favicon.png"> -->
+<link rel="stylesheet" type="text/css" href="../style/layout.css">
+<link rel="icon" type="image/x-icon" href="public/favicon.png">
+
 </head>
 
 <body>
-  <section id="nav-bar">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <% if session[:user_id].nil? %>
-      <li><a href="/login">Login</a></li>
-      <% end %>
-      <li><a href="/signup">Signup</a></li>
-      <li><a href="/spaces">Spaces</a></li>
+    <ul class="navbar">
+
+      <li class="navbar_list"><a href="/">Home</a></li>
       <% unless session[:user_id].nil? %>
-      <li><a href="/profile">Profile</a></li>
+      <li class="navbar_list"><a href="/logout">Log Out</a></li>
       <% end %>
-      <li><a href="/logout">Log Out</a></li>
+      <% if session[:user_id].nil? %>
+      <li class="navbar_list"><a href="/login">Login</a></li>
+      <% end %>
+      <li class="navbar_list"><a href="/signup">Signup</a></li>
+      <li class="navbar_list"><a href="/spaces">Spaces</a></li>
+      <% unless session[:user_id].nil? %>
+      <li class="navbar_list"><a href="/profile">Profile</a></li>
+      <% end %>
+      <li class="navbar_list"><a href="/new-space">New Space</a></li>
     </ul>
-  </section>
 
 <% flash.keys.each do |type| %>
   <div data-alert class="flash <%= type %> alert-box radius">
