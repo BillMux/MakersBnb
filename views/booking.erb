@@ -54,13 +54,11 @@
        return Math.floor((nextDate - targetDate)/dayDivisor) || 7
      }
      var days = nextDate(picker.get('select', 'yyyy-mm-dd'), <%= @start_dates %>)
-     var block_date = new Date(nextDate.setTime( nextDate.getTime() + days * 86400000 ));
-     console.log(days)
-     console.log(block_date)
-         dicker.set('disable', [
-
-         ])
-   });
+     var block_date = picker.get('select')
+         block_date.date += days
+         dicker.set('max', [block_date.year, block_date.month, block_date.date])
+         dicker.set('min', picker.get('select'))
+      });
 
  </script>
 
