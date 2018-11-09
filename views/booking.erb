@@ -51,18 +51,36 @@
           }
 
 
-          var $end = $('#end_date').pickadate({
-              min: true,
-              set: true
-          })
-          var dicker = $end.pickadate('picker')
-          for (var i = 0; i < disabledLength; i++) {
-            dicker.set('disable', [
-              disabled[i]
-            ])
-          }
-        </script>
-      </div>
-    </div>
-  </div>
+    var $end = $('#end_date').pickadate({
+        min: true,
+        set: true
+
+    })
+    var dicker = $end.pickadate('picker')
+    for (var i = 0; i < disabledLength; i++) {
+      dicker.set('disable', [
+        disabled[i]
+      ])
+    }
+  </script>
+
+  <script>
+
+   $('#start_date').change (function() {
+     function nextDate(date, array) {
+       var targetDate = new Date(date)
+       var array = array.map(string => new Date(string))
+       var nextDate = array.find(function(date) { return date>targetDate });
+       var dayDivisor = (1000*60*60*24);
+       return Math.floor((nextDate - targetDate)/dayDivisor) || 7
+     }
+     var days = nextDate(picker.get('select', 'yyyy-mm-dd'), <%= @start_dates %>)
+     var block_date = picker.get('select')
+         block_date.date += days
+         dicker.set('max', [block_date.year, block_date.month, block_date.date])
+         dicker.set('min', picker.get('select'))
+      });
+
+ </script>
+
 </body>

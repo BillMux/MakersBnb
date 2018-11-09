@@ -13,7 +13,7 @@ feature 'index' do
   scenario 'user can log in' do
     visit '/'
     click_link 'Login'
-    expect(page).to have_content 'Log in'
+    expect(page).to have_content 'Login'
   end
 
   scenario 'user can post spaces' do

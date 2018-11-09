@@ -1,0 +1,32 @@
+.centered {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+    /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered_pic {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered_us {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jaguar {
+  fill: #6B7D7D;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 90px;
+  padding-top: 80px;
+}
+
+img {
+  border-radius: 50%;
+}
