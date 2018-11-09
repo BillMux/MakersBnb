@@ -1,0 +1,30 @@
+.available_spaces {
+  margin: auto;
+  padding: 0;
+  text-decoration: none;
+  overflow: hidden;
+  line-height: 3em;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.space_listing {
+  padding: 20px;
+  list-style-type: none;
+  background-color: #B9CDDA;
+  border-bottom: 10px;
+  border-color: #D7DAE5;
+}
+
+.available_spaces a {
+    display: inline;
+    color: grey;
+    text-align: left;
+    padding: 16px;
+    text-decoration: none;
+}
+
+body {
+  text-align: center;
+  color: #6B7D7D
+}
