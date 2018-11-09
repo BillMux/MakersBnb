@@ -1,59 +1,55 @@
 <head>
-  <link rel="stylesheet" type="text/css" href="../style/profile.css">
+  <link rel="stylesheet" href="../style/profile.css">
 </head>
+<body>
+  <h1>Welcome, <%= @user.name %>!</h1>
 
-<h1>Welcome,
-  <%= @user.name %>!</h1>
-
-<form action="/" method='get'>
-  <input id='home' type='submit' value="Home">
-</form>
-
-<table>
-  <section>My Spaces</section>
-  <tr>
-    <th>Title</th>
-    <th>Location</th>
-    <th>Description</th>
-    <th>No. of guests</th>
-    <th>Type</th>
-    <th>Price</th>
-  </tr>
-  <% @spaces.each do |space| %>
+  <table class="spaces">
+    <caption>My Spaces</caption>
     <tr>
-      <td><%= space.title %></td>
-      <td><%= space.location %></td>
-      <td><%= space.description %></td>
-      <td><%= space.guests %></td>
-      <td><%= space.type %></td>
-      <td>£<%= space.price %>per night</td>
-      <td>
-        <a href="/edit-space/<%= space.id %>">Edit</a>
-        <a href="/delete-space/<%= space.id %>">Delete</a>
-      </td>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>No. of guests</th>
+      <th>Type</th>
+      <th>Price</th>
     </tr>
-  <% end %>
-</table>
+    <% @spaces.each do |space| %>
+      <tr>
+        <td><%= space.title %></td>
+        <td><%= space.location %></td>
+        <td><%= space.description %></td>
+        <td><%= space.guests %></td>
+        <td><%= space.type %></td>
+        <td>£<%= space.price %>per night</td>
+        <td>
+          <a class="edit_link" href="/edit-space/<%= space.id %>">Edit</a>
+          <a class="delete_link" href="/delete-space/<%= space.id %>">Delete</a>
+        </td>
+      </tr>
+    <% end %>
+  </table>
 
 
-<table>
-  <section>My Requests</section>
-  <tr>
-    <th>Title</th>
-    <th>Start</th>
-    <th>End</th>
-    <th>Price per night</th>
-  </tr>
-  <% @bookings.each do |booking| %>
+  <table class="requests">
+    <caption>My Requests</caption>
     <tr>
-      <td><%= Space.first(id: booking.space_id).title %></td>
-      <td><%= booking.start_date %> </td>
-      <td><%= booking.end_date%></td>
-      <td>£<%= Space.first(id: booking.space_id).price %>
-      <td>
-        <a href="/edit-request/<%= booking.id %>">Edit request</a>
-        <a href="/delete-request/<%= booking.id %>">Delete Request</a>
-      </td>
+      <th>Title</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Price per night</th>
     </tr>
-  <% end %>
-</table>
+    <% @bookings.each do |booking| %>
+      <tr>
+        <td><%= Space.first(id: booking.space_id).title %></td>
+        <td><%= booking.start_date %></td>
+        <td><%= booking.end_date%></td>
+        <td>£<%= Space.first(id: booking.space_id).price %>
+        <td>
+          <a class="edit_link" href="/edit-request/<%= booking.id %>">Edit Request</a>
+          <a class="delete_link" href="/delete-request/<%= booking.id %>">Delete Request</a>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</body>
