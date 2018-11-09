@@ -108,6 +108,7 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/booking/:id' do
+    @space = Space.first(id: params[:id])
     @bookings = Booking.all(space_id: params[:id])
     puts @bookings
     @disabled = if @bookings.empty?
