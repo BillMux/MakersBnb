@@ -7,7 +7,7 @@ feature 'available spaces' do
     fill_in('password', with: 'nnnn')
     click_button :submit
     click_button :home
-    click_button 'New Space'
+    click_link 'New Space'
     fill_in('title', with: 'Jaguars House')
     fill_in('description', with: 'A cosy and quiet double room')
     fill_in('location', with: 'Central London')
@@ -16,7 +16,7 @@ feature 'available spaces' do
     fill_in('price', with: 20)
     click_button 'Submit'
     click_button 'Home'
-    click_button 'View Spaces'
+    click_link 'Spaces'
     expect(page).to have_content 'Available Spaces'
     expect(page).to have_content 'Jaguars House'
   end
