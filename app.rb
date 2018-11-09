@@ -56,6 +56,12 @@ class Makersbnb < Sinatra::Base
     redirect '/profile'
   end
 
+  get '/delete-request/:id' do
+    @booking = Booking.first(id: params[:id])
+    @booking.destroy
+    redirect '/profile'
+  end
+
   post '/edited/:id' do
     @space = Space.first(id: params[:id])
     @space.update(
