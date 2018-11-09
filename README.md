@@ -2,6 +2,19 @@
 
 This is an AirBnB clone made by William, Muge, Ryan, Alfie
 
+This app can allow the user to create accounts, log in and out. A user can list spaces and check lists of available spaces. They can use a js calendar to select available dates and thus book their trip. They have a list of upcoming trips on their profile as well as any spaces they have up for rental.
+
+## Setup
+
+Fork this repo
+
+Run ```bundle```
+
+Setup two postgres Databases called ```MakersBnBDatabase_test``` and ```MakersBnBDatabase```
+
+Run the server ```ruby app.rb``` in the terminal
+
+Log onto ```localhost:4567/``` to get started!
 
 ## User Stories
 `````
