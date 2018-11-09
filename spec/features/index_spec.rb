@@ -18,7 +18,7 @@ feature 'index' do
 
   scenario 'user can post spaces' do
     visit '/'
-    click_button :post_space
+    click_link 'New Space'
     expect(page).to have_content 'New space'
   end
 end
