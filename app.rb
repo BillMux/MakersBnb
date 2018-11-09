@@ -108,8 +108,8 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/booking/:id' do
+    @space = Space.first(id: params[:id])
     @bookings = Booking.all(space_id: params[:id])
-    puts @bookings
     @disabled = if @bookings.empty?
                   []
                 else
@@ -127,13 +127,18 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/booking/:id' do
-    Booking.create(
-      start_date: params[:start_date],
-      end_date: params[:end_date],
-      user_id: session[:user_id],
-      space_id: params[:id]
-    )
-    redirect '/booking/:id'
+    if session[:user_id].nil?
+      flash[:login] = 'Please log in to make a booking!'
+      redirect '/login'
+    else
+      Booking.create(
+        start_date: params[:start_date],
+        end_date: params[:end_date],
+        user_id: session[:user_id],
+        space_id: params[:id]
+      )
+      redirect '/profile'
+    end
   end
 
   run! if app_file == $PROGRAM_NAME
