@@ -10,8 +10,11 @@
 
 <body>
     <ul class="navbar">
-      <li class="navbar_list"><a href="/new-space">New Space</a></li>
+
       <li class="navbar_list"><a href="/">Home</a></li>
+      <% unless session[:user_id].nil? %>
+      <li class="navbar_list"><a href="/logout">Log Out</a></li>
+      <% end %>
       <% if session[:user_id].nil? %>
       <li class="navbar_list"><a href="/login">Login</a></li>
       <% end %>
@@ -20,7 +23,7 @@
       <% unless session[:user_id].nil? %>
       <li class="navbar_list"><a href="/profile">Profile</a></li>
       <% end %>
-      <li class="navbar_list"><a href="/logout">Log Out</a></li>
+      <li class="navbar_list"><a href="/new-space">New Space</a></li>
     </ul>
 
 <% flash.keys.each do |type| %>
