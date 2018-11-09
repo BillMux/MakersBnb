@@ -1,32 +1,23 @@
-<div>
-  <h1>
-    Available Spaces
-  </h1>
-  <ul>
+<head>
+<link rel="stylesheet" type="text/css" href="../style/spaces.css">
+</head>
+<h1 class="title">
+  Available Spaces
+</h1>
+
+
+  <ul class="available_spaces">
     <% @spaces.each do |space| %>
-      <li>
-        <section>
-        <li>
+        <section class="space_listing">
           <a href="/spaces/<%= space.id %>">
-            <%= space.title %>
+          <img border="0" alt="Home" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX19398941.jpg" width="100" height="100">
           </a>
-          <sub>
-            Location:
-            <%= space.location %>
-          </sub>
-          <sub>
-            No. Guests:
-            <%= space.guests %>
-          </sub>
-          <sub>
-            Price:
-            £<%= space.price %> per night
-          </sub>
+        <li>
+          <a href="/spaces/<%= space.id %>"><%= space.title %></a>
+          <sub>Location:<%= space.location %></sub>
+          <sub>No. Guests: <%= space.guests %></sub>
+          <sub>Price: £<%= space.price %> p/n</sub>
         </li>
-      <% end %>
     </section>
+    <% end %>
   </ul>
-</div>
-<form action="/" method='get'>
-  <input id='home' type='submit' value="Home">
-</form>
