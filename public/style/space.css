@@ -1,0 +1,27 @@
+.space_info {
+  list-style-type: none;
+  width: 30%;
+  margin: auto;
+}
+
+.space_info_box {
+  text-decoration: none;
+  color: #6b7d7d;
+}
+
+.space_info_box li {
+  line-height: 3em;
+}
+
+.space_info_box a {
+    display: block;
+    color: #6b7d7d;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+.image_box {
+  width: 20%;
+  margin: auto;
+}
