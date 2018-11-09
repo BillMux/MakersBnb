@@ -34,13 +34,6 @@
   <table class="requests">
     <caption>My Requests</caption>
     <tr>
-      <td><%= Space.first(id: booking.space_id).title %></td>
-      <td><%= booking.start_date %> </td>
-      <td><%= booking.end_date%></td>
-      <td>£<%= Space.first(id: booking.space_id).price %>
-      <td>
-        <a href="/delete-request/<%= booking.id %>">Delete Request</a>
-      </td>
       <th>Title</th>
       <th>Start</th>
       <th>End</th>
